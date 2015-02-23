@@ -1,9 +1,7 @@
 
 def caesar_cipher(instring, shift)
 	result = ""
-
 	instring.each_byte do |c|		#convert char to ASCII code
-
 		if c >= 65 && c <= 90		#if the character is in uppercase
 			c = c - 65
 			cipher = (c + shift) % 26
@@ -17,9 +15,7 @@ def caesar_cipher(instring, shift)
 		else						#for other special characters, just print out
 			result << c.chr
 		end
-
 	end
-
 	puts result
 end
 
