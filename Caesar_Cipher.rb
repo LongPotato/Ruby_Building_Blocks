@@ -12,7 +12,7 @@ def caesar_cipher(instring, shift)
 			cipher = (c + shift) % 26
 			result << (cipher +97).chr
 
-		else						#for other special characters, just print out
+		else				#for other special characters, just print out
 			result << c.chr
 		end
 	end
