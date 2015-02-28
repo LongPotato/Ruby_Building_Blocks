@@ -65,18 +65,18 @@ module Enumerable
 	end
 
 	def my_inject(initial = nil)
-    	if initial.nil?
-    		initial = self[0]
-    		i = 1
-    	else
-    		i = 0
-    	end
-    	result = initial
-    	while i < self.length
-    		result = yield(result, self[i])
-    		i += 1
-    	end
-    	return result if block_given?
+    		if initial.nil?
+    			initial = self[0]
+    			i = 1
+    		else
+    			i = 0
+    		end
+    		result = initial
+    		while i < self.length
+    			result = yield(result, self[i])
+    			i += 1
+    		end
+    		return result if block_given?
   	end
 
 end #end of module
